@@ -22,11 +22,11 @@
 *{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 body{
     background-color: var(--cor1);
-    overflow-x: hidden;
 }
 
 a.externo::after{
@@ -38,9 +38,6 @@ header{
     text-align: center;
     color: var(--cor0);
     padding: 20px;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
 }
 
 header > h1{
@@ -68,6 +65,7 @@ nav{
     padding: 10px;
     width: 100%;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.233);
+    margin: auto;
 }
 
 nav > a{
@@ -87,14 +85,13 @@ nav > a:hover{
 
 main {
     padding: 20px;
-    margin: 30px auto 30px auto;
+    margin: auto;
     background-color: var(--cor0);
     min-width: 300px;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
-    overflow: hidden;
-    overflow-x: hidden;
+
 }
 
 
