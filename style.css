@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --cor0: #F2EEEB;
+    --cor1: #9BD991;
+    --cor2: #03A62C;
+    --cor3: #025928;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'idroid', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor3), var(--cor2));
+    text-align: center;
+    color: var(--cor0);
+    padding: 10px;
+    width: 100%;
+    min-height: 150px;
+    padding-top: 30px; 
+}
+
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.39);
+    
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.39);
+}
+
+nav{
+    background-color: #023614;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.233);
+}
+
+nav > a{
+    color: var(--cor0);
+    text-decoration: none;
+    margin-right: 10px;
+    font: bold 15px arial;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    color: var(--cor3);
+    background-color: #3bd268;
+}
+
+main{
+    padding: 20px;
+    margin: 30px auto 30px auto;
+    background-color: var(--cor0);
+    min-width: 300px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.342);
+}
+
+main > img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+article > h1{
+    padding: 10px;
+    font-size: 3em;
+}
+
+article > p{
+    font-size: 1em;
+    font-family: var(--fonte-padrao);
+    margin: 15px 0px;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+article h1{
+    font-size: 3em;
+}
+
+.externo {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+}
+
+.externo:hover {
+    color: var(--cor2);
+    text-decoration: underline;
+}
+
+main h1{
+    font-family: var(--fonte-android);
+    color: var(--cor3);
+    font-size: 2em;
+}
+
+h2{
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to left,var(--cor1), var(--cor0));
+    color: var(--cor3);
+}
+
+div.video{
+    background-color: var(--cor3);
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor1);
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.336);
+    font-family: var(--fonte-padrao);
+}
+
+aside > p {
+    margin: 20px 10px 10px 10px;
+    font-size: 1em;
+    text-indent: 30px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\FE0F\00A0';
+    margin: 0px 10px;
+}
+
+aside > h3 {
+    background-color: #025928;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+span{
+    color: #023614;
+    font-weight: bold;
+}
+
+footer{
+    background-color: var(--cor3);
+    text-align: center;
+    color: white;
+}
+
+footer > p{
+    padding: 10px;
+    font: italic 0.9em var(--fonte-padrao);
+}
+
+#footer-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#footer-link:hover{
+    text-decoration: underline;
+}
