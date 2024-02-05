@@ -86,15 +86,20 @@ nav > a:hover{
     background-color: #3bd268;
 }
 
-main{
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px;
     margin: 30px auto 30px auto;
     background-color: var(--cor0);
     min-width: 300px;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.342);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
 }
+
 
 main > img{
     max-width: 100%;
