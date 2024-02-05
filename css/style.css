@@ -87,10 +87,6 @@ nav > a:hover{
 }
 
 main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 20px;
     margin: 30px auto 30px auto;
     background-color: var(--cor0);
